@@ -20,7 +20,7 @@
 ### Links
 
 - Solution URL: [Code](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Live Site URL: [BLOG-PREVIEW-CARD-STATIC](https://rinta-git.github.io/BLOG-PREVIEW-CARD-STATIC/)
 
 ## My process
 
