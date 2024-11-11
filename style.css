@@ -1,0 +1,92 @@
+:root{
+    --fs1:1.5rem;
+    --fs2:1rem;
+    --fs3:0.875rem;
+    --12px:0.75rem;
+    --20px:1.25rem;
+    --yellow:hsl(47, 88%, 63%);
+    --black:hsl(0, 0%, 7%);
+    --gray:hsl(0,0%,42%);
+}
+
+html, body{
+    height: 100%;
+    margin: 0;
+}
+
+h1,h2,h3,h4,h5,h6,p{
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: 'Figtree';
+    src:url('./assets/fonts/Figtree-VariableFont_wght.ttf') format('truetype')
+}
+.content{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--yellow);
+}
+.card{
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    border: 1px solid var(--black);
+    border-radius: 20px;
+    padding: 24px;
+    width: 334px;
+    filter: drop-shadow(8px 8px 0 rgba(0 0 0/100%));
+    margin: 0 24px;
+}
+.card-img img{
+    border-radius: 10px;
+    width: 100%;
+    height: auto;
+    display: block;
+}
+.card-content{
+    margin: 24px 0;
+    -webkit-font-smoothing: antialiased; /* Improves font rendering on WebKit browsers */ 
+    -moz-osx-font-smoothing: grayscale; /* Improves font rendering on macOS */
+    line-height: 150%;
+    font-family: 'Figtree';
+}
+.blog-category{
+    background-color: var(--yellow);
+    color: var(--black);
+    width: fit-content;
+    padding: 4px 12px;
+    border-radius: 4px;
+    font-weight: 800;
+    font-size: clamp(var(--12px), 2vw, var(--fs3));
+}
+.blog-publish-date{
+    padding: 12px 0;
+    font-weight: 500;
+    font-size: clamp(var(--12px),2vw,var(--fs3));
+}
+.blog-title{
+    padding-bottom: 12px;
+    font-weight: 800;
+    font-size: clamp(var(--20px),2vw,var(--fs1));
+}
+.blog-title:hover{
+    color: var(--yellow);
+    cursor: pointer;
+}
+.blog-desc{
+    color: var(--gray);
+    font-weight: 500;
+    font-size: clamp(var(--fs3),2vw,var(--fs2));
+}
+.author-section{
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-family: 'Figtree';
+    font-weight: 800;
+    font-size: var(--fs3);
+}
